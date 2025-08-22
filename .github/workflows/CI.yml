@@ -35,5 +35,10 @@ jobs:
       run: mvn test
     - name: Run Build package with Maven
       run: mvn package
+    - name: upload WAR artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: addressbook-war
+        path: target/addressbook.war
 
     
