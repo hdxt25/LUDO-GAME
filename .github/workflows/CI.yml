@@ -39,6 +39,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: ludo-game-jar
-        path: target/ludo-game-1.0-SNAPSHOT.jar
+        path: target/ludo-game-1.0.0.jar
 
     

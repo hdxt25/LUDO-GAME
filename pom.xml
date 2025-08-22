@@ -6,6 +6,7 @@
   <groupId>com.example</groupId>
   <artifactId>ludo-game</artifactId>
   <version>1.0.0</version>
+  <packaging>jar</packaging>
   <name>Ludo Game</name>
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
