@@ -17,7 +17,7 @@ on:
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: macos-15
 
     steps:
     - uses: actions/checkout@v4
@@ -27,7 +27,13 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean install
+    - name: Run Build compile with Maven
+      run: mvn compile
+    - name: Run Build review
+      run: mvn pmd:pmd
+    - name: Run Test with Maven
+      run: mvn test
+    - name: Run Build package with Maven
+      run: mvn package
 
     
